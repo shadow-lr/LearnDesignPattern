@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/repos/LearnDesignPattern/main.cpp
+D:/repos/LearnDesignPattern/Create/Factory.cpp
 iostream
+-
+vector
+-
+memory
 -
 

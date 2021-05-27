@@ -122,32 +122,32 @@ DesignPattern/fast:
 	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/build
 .PHONY : DesignPattern/fast
 
-main.obj: main.cpp.obj
+Create/Factory.obj: Create/Factory.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Create/Factory.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Create/Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.obj
+.PHONY : Create/Factory.cpp.obj
 
-main.i: main.cpp.i
+Create/Factory.i: Create/Factory.cpp.i
 
-.PHONY : main.i
+.PHONY : Create/Factory.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/main.cpp.i
-.PHONY : main.cpp.i
+Create/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.i
+.PHONY : Create/Factory.cpp.i
 
-main.s: main.cpp.s
+Create/Factory.s: Create/Factory.cpp.s
 
-.PHONY : main.s
+.PHONY : Create/Factory.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/main.cpp.s
-.PHONY : main.cpp.s
+Create/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.s
+.PHONY : Create/Factory.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... DesignPattern
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Create/Factory.obj
+	@echo ... Create/Factory.i
+	@echo ... Create/Factory.s
 .PHONY : help
 
 

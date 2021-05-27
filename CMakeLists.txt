@@ -3,4 +3,7 @@ project(DesignPattern)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DesignPattern main.cpp)
+aux_source_directory(Create create)
+
+add_executable(DesignPattern ${create})
+
