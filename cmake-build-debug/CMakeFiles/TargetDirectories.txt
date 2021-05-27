@@ -1,0 +1,3 @@
+D:/repos/LearnDesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir
+D:/repos/LearnDesignPattern/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repos/LearnDesignPattern/cmake-build-debug/CMakeFiles/rebuild_cache.dir
