@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/repos/LearnDesignPattern/Create/Factory.cpp
+D:/repos/LearnDesignPattern/Create/AbstractFactory/AbstractFactory.cpp
 iostream
 -
 vector
 -
+unordered_map
+-
 memory
 -
+functional
+-
+IItem.h
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
+
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
 

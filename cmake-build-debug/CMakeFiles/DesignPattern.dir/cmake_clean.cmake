@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DesignPattern.dir/Create/Factory.cpp.obj"
+  "CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.obj"
   "DesignPattern.exe"
   "DesignPattern.exe.manifest"
   "DesignPattern.pdb"

@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/repos/LearnDesignPattern/Create/Factory.cpp">
+		<Unit filename="D:/repos/LearnDesignPattern/Create/AbstractFactory/AbstractFactory.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
 		<Unit filename="D:/repos/LearnDesignPattern/CMakeLists.txt">

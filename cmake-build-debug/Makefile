@@ -122,32 +122,32 @@ DesignPattern/fast:
 	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/build
 .PHONY : DesignPattern/fast
 
-Create/Factory.obj: Create/Factory.cpp.obj
+Create/AbstractFactory/AbstractFactory.obj: Create/AbstractFactory/AbstractFactory.cpp.obj
 
-.PHONY : Create/Factory.obj
+.PHONY : Create/AbstractFactory/AbstractFactory.obj
 
 # target to build an object file
-Create/Factory.cpp.obj:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.obj
-.PHONY : Create/Factory.cpp.obj
+Create/AbstractFactory/AbstractFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.obj
+.PHONY : Create/AbstractFactory/AbstractFactory.cpp.obj
 
-Create/Factory.i: Create/Factory.cpp.i
+Create/AbstractFactory/AbstractFactory.i: Create/AbstractFactory/AbstractFactory.cpp.i
 
-.PHONY : Create/Factory.i
+.PHONY : Create/AbstractFactory/AbstractFactory.i
 
 # target to preprocess a source file
-Create/Factory.cpp.i:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.i
-.PHONY : Create/Factory.cpp.i
+Create/AbstractFactory/AbstractFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.i
+.PHONY : Create/AbstractFactory/AbstractFactory.cpp.i
 
-Create/Factory.s: Create/Factory.cpp.s
+Create/AbstractFactory/AbstractFactory.s: Create/AbstractFactory/AbstractFactory.cpp.s
 
-.PHONY : Create/Factory.s
+.PHONY : Create/AbstractFactory/AbstractFactory.s
 
 # target to generate assembly for a file
-Create/Factory.cpp.s:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/Factory.cpp.s
-.PHONY : Create/Factory.cpp.s
+Create/AbstractFactory/AbstractFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.s
+.PHONY : Create/AbstractFactory/AbstractFactory.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... DesignPattern
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Create/Factory.obj
-	@echo ... Create/Factory.i
-	@echo ... Create/Factory.s
+	@echo ... Create/AbstractFactory/AbstractFactory.obj
+	@echo ... Create/AbstractFactory/AbstractFactory.i
+	@echo ... Create/AbstractFactory/AbstractFactory.s
 .PHONY : help
 
 
