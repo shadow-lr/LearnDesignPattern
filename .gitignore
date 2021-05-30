@@ -45,4 +45,6 @@ bld/
 build/
 Run/
 
+cmake-build-debug/
+
 .vs
