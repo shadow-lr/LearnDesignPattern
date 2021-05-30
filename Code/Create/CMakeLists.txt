@@ -9,6 +9,3 @@ LIST(REMOVE_DUPLICATES dirList)
 foreach(subDir ${dirList})
     add_subdirectory(${subDir})
 endforeach()
-
-
-

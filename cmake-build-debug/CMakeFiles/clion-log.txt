@@ -1,20 +1,5 @@
 "D:\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\repos\LearnDesignPattern
 Build Type Debug
-CMake Error at CMakeLists.txt:32 (add_subdirectory):
-  The source directory
-
-    D:/repos/LearnDesignPattern/Code
-
-  does not contain a CMakeLists.txt file.
-
-
-CMake Error at CMakeLists.txt:33 (add_subdirectory):
-  The source directory
-
-    D:/repos/LearnDesignPattern/Template
-
-  does not contain a CMakeLists.txt file.
-
-
--- Configuring incomplete, errors occurred!
-See also "D:/repos/LearnDesignPattern/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/repos/LearnDesignPattern/cmake-build-debug
