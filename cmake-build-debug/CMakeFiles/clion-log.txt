@@ -1,5 +1,0 @@
-"D:\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\repos\LearnDesignPattern
-Build Type Debug
--- Configuring done
--- Generating done
--- Build files have been written to: D:/repos/LearnDesignPattern/cmake-build-debug
