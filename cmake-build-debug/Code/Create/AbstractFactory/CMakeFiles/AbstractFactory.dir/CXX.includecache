@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/AbstractFactory.cpp
+iostream
+-
+vector
+-
+unordered_map
+-
+memory
+-
+assert.h
+-
+IFactory.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IFactory.h
+
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IDCard.h
+IItem.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IItem.h
+
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IFactory.h
+IItem.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IItem.h
+IDCard.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IDCard.h
+Television.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/Television.h
+functional
+-
+unordered_map
+-
+
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IItem.h
+
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/Television.h
+IItem.h
+D:/repos/LearnDesignPattern/Code/Create/AbstractFactory/IItem.h
+

@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = D:\repos\LearnDesignPattern\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,28 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"D:\CLion 2020.1.2\bin\cmake\win\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"D:\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +121,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DesignPattern
+# Target rules for targets named AbstractFactory
 
 # Build rule for target.
-DesignPattern: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 DesignPattern
-.PHONY : DesignPattern
+AbstractFactory: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 AbstractFactory
+.PHONY : AbstractFactory
 
 # fast build rule for target.
-DesignPattern/fast:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/build
-.PHONY : DesignPattern/fast
-
-Create/AbstractFactory/AbstractFactory.obj: Create/AbstractFactory/AbstractFactory.cpp.obj
-
-.PHONY : Create/AbstractFactory/AbstractFactory.obj
-
-# target to build an object file
-Create/AbstractFactory/AbstractFactory.cpp.obj:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.obj
-.PHONY : Create/AbstractFactory/AbstractFactory.cpp.obj
-
-Create/AbstractFactory/AbstractFactory.i: Create/AbstractFactory/AbstractFactory.cpp.i
-
-.PHONY : Create/AbstractFactory/AbstractFactory.i
-
-# target to preprocess a source file
-Create/AbstractFactory/AbstractFactory.cpp.i:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.i
-.PHONY : Create/AbstractFactory/AbstractFactory.cpp.i
-
-Create/AbstractFactory/AbstractFactory.s: Create/AbstractFactory/AbstractFactory.cpp.s
-
-.PHONY : Create/AbstractFactory/AbstractFactory.s
-
-# target to generate assembly for a file
-Create/AbstractFactory/AbstractFactory.cpp.s:
-	$(MAKE) -f CMakeFiles\DesignPattern.dir\build.make CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.s
-.PHONY : Create/AbstractFactory/AbstractFactory.cpp.s
+AbstractFactory/fast:
+	$(MAKE) -f Code\Create\AbstractFactory\CMakeFiles\AbstractFactory.dir\build.make Code/Create/AbstractFactory/CMakeFiles/AbstractFactory.dir/build
+.PHONY : AbstractFactory/fast
 
 # Help Target
 help:
@@ -155,12 +139,10 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... DesignPattern
-	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Create/AbstractFactory/AbstractFactory.obj
-	@echo ... Create/AbstractFactory/AbstractFactory.i
-	@echo ... Create/AbstractFactory/AbstractFactory.s
+	@echo ... test
+	@echo ... edit_cache
+	@echo ... AbstractFactory
 .PHONY : help
 
 

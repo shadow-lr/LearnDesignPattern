@@ -15,10 +15,30 @@ unordered_map
 -
 memory
 -
-functional
+assert.h
 -
+IFactory.h
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IFactory.h
+
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IDCard.h
 IItem.h
 D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
 
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IFactory.h
+IItem.h
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
+IDCard.h
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IDCard.h
+Television.h
+D:/repos/LearnDesignPattern/Create/AbstractFactory/Television.h
+functional
+-
+unordered_map
+-
+
+D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
+
+D:/repos/LearnDesignPattern/Create/AbstractFactory/Television.h
+IItem.h
 D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
 

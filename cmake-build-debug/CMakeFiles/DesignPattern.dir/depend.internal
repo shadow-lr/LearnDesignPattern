@@ -3,4 +3,7 @@
 
 CMakeFiles/DesignPattern.dir/Create/AbstractFactory/AbstractFactory.cpp.obj
  D:/repos/LearnDesignPattern/Create/AbstractFactory/AbstractFactory.cpp
+ D:/repos/LearnDesignPattern/Create/AbstractFactory/IDCard.h
+ D:/repos/LearnDesignPattern/Create/AbstractFactory/IFactory.h
  D:/repos/LearnDesignPattern/Create/AbstractFactory/IItem.h
+ D:/repos/LearnDesignPattern/Create/AbstractFactory/Television.h
