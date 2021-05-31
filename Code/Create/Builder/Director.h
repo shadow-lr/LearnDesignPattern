@@ -13,11 +13,9 @@ public:
 
     void Create() {
         this->builder->BuildFirstSkill();
-        this->builder->BuildFirstSkill();
+        this->builder->BuildSecondSkill();
     }
 
 private:
     std::shared_ptr<TeacherAbstractBuilder> builder;
 };
-
-5

@@ -13,5 +13,7 @@ public:
 
     virtual void BuildSecondSkill() = 0;
 
+    virtual void PrintSkillList() = 0;
+
     virtual std::shared_ptr<Teacher> GetTeacher() = 0;
 };

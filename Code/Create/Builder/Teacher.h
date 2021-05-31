@@ -17,6 +17,14 @@ public:
         this->second_skill = skill;
     }
 
+    std::string GetFirstSkill() {
+        return this->first_skill;
+    }
+
+    std::string GetSecondSkill() {
+        return this->second_skill;
+    };
+
 private:
     std::string first_skill;
     std::string second_skill;
