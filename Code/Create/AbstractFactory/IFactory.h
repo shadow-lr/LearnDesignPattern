@@ -4,6 +4,7 @@
 #include "IDCard.h"
 #include "Television.h"
 #include <functional>
+#include <memory>
 #include <unordered_map>
 
 class IFactory {

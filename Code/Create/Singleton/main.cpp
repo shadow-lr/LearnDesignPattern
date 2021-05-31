@@ -15,8 +15,8 @@ public:
 
 int main() {
 
-    auto mySingleTon = Singleton<MySingleTon>::GetInstance();
+    auto mySingleTon = Singleton < MySingleTon > ::GetInstance();
     mySingleTon->Func();
 
-    Singleton<MySingleTon>::DesInstance();
+    Singleton < MySingleTon > ::DesInstance();
 }
