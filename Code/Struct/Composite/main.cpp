@@ -1,7 +1,37 @@
+#include "ConcreteCompany.h"
+#include "FinanceDepartment.h"
+#include "HRDepartment.h"
 
+// Ê¹ÈİÆ÷ÓëÄÚÈİ¾ßÓĞÒ»ÖÂĞÔ(Ò²¿ÉÒÔ³Æ×÷¶à¸öÓëµ¥¸öµÄÒ»ÖÂĞÔ)£¬´´Ôì³öµİ¹é½á¹¹µÄÄ£Ê½
+int main() {
 
+    {
+        // ×Ü¹«Ë¾
+        std::shared_ptr<Company> root = std::make_shared<ConcreteCompany>("×Ü¹«Ë¾");
+        std::shared_ptr<Company> leaf1 = std::make_shared<FinanceDepartment>("²ÆÎñ²¿");
+        std::shared_ptr<Company> leaf2 = std::make_shared<HRDepartment>("ÈËÁ¦×ÊÔ´²¿");
 
-// ä½¿å®¹å™¨ä¸å†…å®¹å…·æœ‰ä¸€è‡´æ€§(ä¹Ÿå¯ä»¥ç§°ä½œå¤šä¸ªä¸å•ä¸ªçš„ä¸€è‡´æ€§)ï¼Œåˆ›é€ å‡ºé€’å½’ç»“æ„çš„æ¨¡å¼
-int main(){
+        root->Add(leaf1);
+        root->Add(leaf2);
+
+        // ·Ö¹«Ë¾A
+        std::shared_ptr<Company> mid1 = std::make_shared<ConcreteCompany>("·Ö¹«Ë¾A");
+        std::shared_ptr<Company> leaf3 = std::make_shared<FinanceDepartment>("²ÆÎñ²¿");
+        std::shared_ptr<Company> leaf4 = std::make_shared<HRDepartment>("ÈËÁ¦×ÊÔ´²¿");
+
+        mid1->Add(leaf3);
+        mid1->Add(leaf4);
+        root->Add(mid1);
+
+        // ·Ö¹«Ë¾B
+        std::shared_ptr<Company> mid2 = std::make_shared<ConcreteCompany>("·Ö¹«Ë¾B");
+        std::shared_ptr<FinanceDepartment> leaf5 = std::make_shared<FinanceDepartment>("²ÆÎñ²¿");
+        std::shared_ptr<HRDepartment> leaf6 = std::make_shared<HRDepartment>("ÈËÁ¦×ÊÔ´²¿");
+        mid2->Add(leaf5);
+        mid2->Add(leaf6);
+        root->Add(mid2);
+
+        root->Show(0);
+    }
 
 }
