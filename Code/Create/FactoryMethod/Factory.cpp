@@ -84,5 +84,4 @@ int main() {
     product2->use();
 
     iFactory->printAllInfo();
-    return 0;
 }

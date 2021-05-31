@@ -1,5 +1,6 @@
 #pragma once
 
+#include <memory>
 #include "IFactory.h"
 #include "ListIDCard.h"
 #include "ListTelevision.h"
@@ -7,10 +8,6 @@
 class ListFactory : public IFactory {
 public:
     ~ListFactory() {}
-
-//    IDCard* createIDCard1(const std::string &name, float value) {
-//        return new ListIDCard(name, value);
-//    }
 
     std::shared_ptr<IDCard> createIDCard(const std::string &name, float value) override {
         return std::make_shared<ListIDCard>(name, value);

@@ -1,5 +1,8 @@
 #pragma once
 
+#include <string>
+#include "Television.h"
+
 class ListTelevision : public Television {
 public:
     using Television::Television;

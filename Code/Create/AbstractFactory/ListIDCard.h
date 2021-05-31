@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include "IDCard.h"
 
 class ListIDCard : public IDCard {
