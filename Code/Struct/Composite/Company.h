@@ -11,7 +11,7 @@ class Company {
 public:
     virtual ~Company() {}
 
-    Company(std::string name) : m_name(name) {}
+    Company(const std::string& name) : m_name(name) {}
 
     virtual void Add(std::shared_ptr<Company> pCom) {}
 

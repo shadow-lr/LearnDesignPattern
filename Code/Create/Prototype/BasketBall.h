@@ -4,7 +4,7 @@
 
 class BasketBall : public Game {
 public:
-    BasketBall(std::string name) : m_name(name) {}
+    BasketBall(const std::string& name) : m_name(name) {}
 
     ~BasketBall() {}
 

@@ -1,4 +1,3 @@
-
 #include "ConcreteComponent.h"
 #include "ConcreteDecoratorA.h"
 #include "ConcreteDecoratorB.h"
@@ -12,9 +11,13 @@ int main() {
     std::shared_ptr<Component> pCom = std::make_shared<ConcreteComponent>();
     std::shared_ptr<Decorator> pDec = nullptr;
 
+    // 添加职责A
     pDec = std::make_shared<ConcreteDecoratorA>(pCom);
+    // 添加职责B
     pDec = std::make_shared<ConcreteDecoratorB>(pDec);
+    // 添加职责C
     pDec = std::make_shared<ConcreteDecoratorC>(pDec);
+    // 添加职责D
     pDec = std::make_shared<ConcreteDecoratorD>(pDec);
 
     pDec->Operation();

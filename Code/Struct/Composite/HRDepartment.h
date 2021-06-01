@@ -4,7 +4,7 @@
 
 class HRDepartment : public Company {
 public:
-    HRDepartment(std::string name) : Company(name) {}
+    HRDepartment(const std::string& name) : Company(name) {}
 
     virtual ~HRDepartment() {}
 
