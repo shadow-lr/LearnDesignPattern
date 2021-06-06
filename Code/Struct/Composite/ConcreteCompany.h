@@ -21,7 +21,7 @@ private:
 
 // 增加部门(组件)
 void ConcreteCompany::Add(std::shared_ptr<Company> pCom) {
-    m_listCompany.push_back(pCom);
+    m_listCompany.emplace_back(pCom);
 }
 
 // 移除部门(组件)

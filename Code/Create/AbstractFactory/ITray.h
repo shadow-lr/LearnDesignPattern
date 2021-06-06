@@ -11,7 +11,7 @@ public:
     ITray(const std::string &name) : IItem(name) {}
 
     void addItem(std::shared_ptr<IItem> item) {
-        m_itemList.push_back(item);
+        m_itemList.emplace_back(item);
     }
 
 protected:

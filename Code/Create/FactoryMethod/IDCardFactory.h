@@ -9,7 +9,7 @@ public:
     }
 
     void registerProduct(std::shared_ptr<IProduct> pro) override {
-        m_productList.push_back(pro);
+        m_productList.emplace_back(pro);
     }
 
     void printAllInfo() override {
