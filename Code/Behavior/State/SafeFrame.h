@@ -30,6 +30,7 @@ public:
         m_state->DoClock(this, hour);
     }
 
+    // 这个函数是策略模式和状态模式的区别，策略模式是以类作为一种策略在构造的时候进行指向，不像状态模式一样通过内部的形式转变"状态"
     void StateChange(IState *state) override {
         std::cout << __FUNCTION__ << std::endl;
         m_state = state;
