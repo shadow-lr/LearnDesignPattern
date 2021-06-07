@@ -1,4 +1,7 @@
 #include "Strategy.h"
+#include "Context.h"
+#include "ConcreteStrategyA.h"
+#include "ConcreteStrategyB.h"
 
 /*
   Strategy模式和Template模式实际是实现一个抽象接口的两种方式：继承和组合之间的区别。
@@ -9,5 +12,12 @@
 //策略A与B可替换
 
 int main() {
+    std::shared_ptr<Strategy> baseStrategy = std::make_shared<ConcreteStrategyA>();
+    std::shared_ptr<Context> ctxt = std::make_shared<Context>(baseStrategy);
 
+    ctxt->DoAction();
+
+    // 动态更换策略 然后做策略相应的逻辑
+    ctxt = std::make_shared<Context>(std::make_shared<ConcreteStrategyB>());
+    ctxt->DoAction();
 }
