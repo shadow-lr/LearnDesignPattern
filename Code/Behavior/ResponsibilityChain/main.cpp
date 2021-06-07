@@ -26,5 +26,14 @@ int main() {
         std::cout << "----Current request level is level_num----" << "\n";
         monitor->HandleRequest(Level_Num);
         std::cout << "\n";
+
+        delete mentor;
+        monitor = nullptr;
+
+        delete captain;
+        captain = nullptr;
+
+        delete monitor;
+        mentor = nullptr;
     }
 }

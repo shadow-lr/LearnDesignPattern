@@ -22,4 +22,13 @@ int main() {
 
     seller1->SendMessage("3500不难砍了");
     buyer1->SendMessage("行,成交");
+
+    delete buyer1;
+    buyer1 = nullptr;
+
+    delete seller1;
+    seller1 = nullptr;
+
+    delete mediator;
+    mediator = nullptr;
 }
