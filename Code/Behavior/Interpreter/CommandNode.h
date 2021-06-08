@@ -1,0 +1,8 @@
+//
+// Created by Administrator on 2021/6/8.
+//
+
+#ifndef DESIGNPATTERN_COMMANDNODE_H
+#define DESIGNPATTERN_COMMANDNODE_H
+
+#endif //DESIGNPATTERN_COMMANDNODE_H
