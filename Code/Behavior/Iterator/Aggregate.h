@@ -22,13 +22,13 @@ public:
     explicit ConcreteAggreaget(std::vector<T> _objs) : objs(_objs) {}
 
     T GetItem(int idx) {
-        if (idx < 0 || idx >= objs.size()) {
+        if (idx < 0 || idx >= (int) objs.size()) {
             return T();
         }
         return objs[idx];
     }
 
-    int GetSize() { return objs.size(); }
+    int GetSize() { return (int) objs.size(); }
 
 private:
     std::vector<T> objs;

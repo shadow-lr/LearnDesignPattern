@@ -1,8 +1,18 @@
-//
-// Created by Administrator on 2021/6/8.
-//
+#pragma once
 
-#ifndef DESIGNPATTERN_COMMANDNODE_H
-#define DESIGNPATTERN_COMMANDNODE_H
+#include "Node.h"
+#include "LoopCommand.h"
+#include "PrimitiveCommand.h"
 
-#endif //DESIGNPATTERN_COMMANDNODE_H
+// 非终结符表达式：语句命令节点类
+class CommandNode : public Node {
+public:
+    ~CommandNode() {}
+
+    void Interpret(Context *context) override;
+
+    void Execute() override;
+
+private:
+    Node *node;
+};

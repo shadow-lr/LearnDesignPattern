@@ -2,51 +2,23 @@
 
 #include <iostream>
 #include <vector>
+#include <sstream>
+#include <exception>
 
 class Context {
 public:
-    Context(const std::string &text) {
-        std::string delim = " ";
-        std::string item;
-        std::stringstream ss(text);
-        while (getline(ss, item, delim)) {
-            this->tokens.push_back(item);
-        }
-        NextToken();
-    }
+    Context(const std::string &text);
 
-    std::string NextToken() {
-        if (index < tokens.size() - 1) {
-            currentToken = tokens[++index];
-        } else {
-            currentToken = nullptr;
-        }
-        return currentToken;
-    }
+    void NextToken();
 
-    int GetCurrentNumber(){
-        int number = 0;
-        try {
-            number = std::atoi(currentToken.c_str());
-        }
-        catch(std::exception ex) {
-            std::cout << "错误提示：" <<  ex.Message;
-        }
-
-        return number;
-    }
+    // 如果当前的标记是一个数字，则返回对应的数值
+    int GetCurrentNumber();
 
     // 返回当前的标记
-    std::string GetCurrentToken() {
-        return currentToken;
-    }
+    std::string GetCurrentToken();
 
     // 跳过一个标记
-    std::string SkipToken(std::string token) {
-        if (token.compare(currentToken) != 0) {
-            std::cout << "错误提示：" << currentToken << "解释错误!" << "n";
-        }
-    }
+    void SkipToken(std::string token);
 
 private:
     int index = -1;
