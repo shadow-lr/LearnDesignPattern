@@ -9,6 +9,7 @@ public:
     void Interpret(Context *context) override {
         name = context->GetCurrentToken();
         context->SkipToken(name);
+
         if (name.compare("PRINT") != 0
             && name.compare("BREAK") != 0 && name.compare("SPACE") != 0) {
             std::cout << "·Ç·¨ÃüÁî!" << "\n";
@@ -18,6 +19,7 @@ public:
             text = context->GetCurrentToken();
             context->NextToken();
         }
+        std::cout << name << "\t" << "text : " << text << "\n";
     }
 
     void Execute() override {

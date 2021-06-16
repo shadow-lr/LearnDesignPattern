@@ -28,6 +28,7 @@ void ExpressionNode::Interpret(Context *context) {
 
 void ExpressionNode::Execute() {
     for (auto node : nodeList) {
+        std::cout << typeid(decltype(node)).name() << "\n";
         node->Execute();
     }
 }
