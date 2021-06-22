@@ -1,4 +1,3 @@
-
 #include "Abstraction.h"
 #include "AbstractionImplement.h"
 
